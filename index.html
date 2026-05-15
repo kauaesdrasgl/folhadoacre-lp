@@ -23,7 +23,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Cormorant:ital,wght@1,300;1,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./logo-folha-acre/folha do acre secundaria 2 color .png" type="image/x-icon">
+  <link rel="icon" href="./logo-folha-acre/folha do acre secundaria 2 color .png" type="image/x-icon" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
   <header id="header">
     <div class="header-inner">
       <a href="#" class="logo" aria-label="Folha do Acre — Início">
-        <img src="./logo-folha-acre/folha do acre principal color.png" alt="Logo Folha do Acre">
+        <img src="./logo-folha-acre/folha do acre principal color.png" alt="Logo Folha do Acre" />
       </a>
 
       <nav aria-label="Navegação principal">
@@ -282,35 +282,27 @@
       </article>
 
       <!-- WhatsApp — card duplo -->
-      <article class="plataforma-card reveal" style="
-            grid-column: span 2;
-            background: linear-gradient(135deg, #f7fbfb 0%, var(--branco) 100%);
-          ">
-        <div style="
-              display: flex;
-              align-items: flex-start;
-              gap: 1.5rem;
-              flex-wrap: wrap;
-            ">
-          <div class="card-icon" style="background: rgba(31, 90, 93, 0.07); color: var(--verde)" aria-hidden="true">
+      <!-- WhatsApp — card normal sem grid-column fixo -->
+      <article class="plataforma-card reveal plataforma-card--whatsapp">
+        <div class="whatsapp-inner">
+          <div class="card-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path
                 d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
             </svg>
           </div>
-          <div style="flex: 1; min-width: 220px">
+          <div class="whatsapp-content">
             <p class="card-platform-name">Canal WhatsApp</p>
             <h3 class="card-title">Folha do Acre no WhatsApp</h3>
-            <p class="card-desc" style="max-width: 480px">
+            <p class="card-desc">
               Alertas imediatos, manchetes do dia e comunicação direta com o
               público acreano. Receba as notícias mais importantes no seu
               celular.
             </p>
             <a href="https://whatsapp.com/channel/0029Vb7uJx80bIdo2UZfjH0y" target="_blank" rel="noopener"
-              class="card-link" aria-label="Entrar no Canal WhatsApp do Folha do Acre">
+              class="card-link">
               Entrar no Canal
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
               </svg>
             </a>
@@ -338,14 +330,13 @@
         </svg>
       </a>
     </div>
-  
+
     <div class="noticias-grid">
       <!-- Destaque -->
       <article class="noticia-card noticia-card--destaque reveal">
         <div class="noticia-img">
           <img src="https://folhadoacre.com.br/wp-content/uploads/2026/05/sargbanner-696x348.jpg"
-               alt="Ilustração saúde Acre"
-               loading="lazy">
+            alt="Ilustração saúde Acre" loading="lazy" />
         </div>
         <div class="noticia-body">
           <div class="noticia-meta">
@@ -353,13 +344,17 @@
             <time class="noticia-data" datetime="2026-05-15">15 mai. 2026</time>
           </div>
           <h3 class="noticia-titulo">
-            Acre entra em alerta para casos de síndrome respiratória grave, aponta Fiocruz
+            Acre entra em alerta para casos de síndrome respiratória grave,
+            aponta Fiocruz
           </h3>
           <p class="noticia-resumo">
-            O Acre está entre os estados brasileiros em situação de alerta para aumento dos casos de Síndrome Respiratória Aguda Grave (SRAG), segundo dados divulgados nesta quinta-feira, 14, pela Fundação Oswaldo Cruz, por meio do Boletim InfoGripe.
+            O Acre está entre os estados brasileiros em situação de alerta
+            para aumento dos casos de Síndrome Respiratória Aguda Grave
+            (SRAG), segundo dados divulgados nesta quinta-feira, 14, pela
+            Fundação Oswaldo Cruz, por meio do Boletim InfoGripe.
           </p>
-          <a href="https://folhadoacre.com.br/2026/05/acre-entra-em-alerta-para-casos-de-sindrome-respiratoria-grave-aponta-fiocruz/" target="_blank" rel="noopener" class="noticia-link"
-            aria-label="Ler notícia completa">
+          <a href="https://folhadoacre.com.br/2026/05/acre-entra-em-alerta-para-casos-de-sindrome-respiratoria-grave-aponta-fiocruz/"
+            target="_blank" rel="noopener" class="noticia-link" aria-label="Ler notícia completa">
             Ler reportagem completa
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
@@ -368,13 +363,13 @@
           </a>
         </div>
       </article>
-  
+
       <!-- Notícia 2 -->
       <article class="noticia-card reveal reveal-delay-1">
         <div class="noticia-img">
-          <img src="https://folhadoacre.com.br/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-15-at-11.30.29-696x522.jpeg"
-               alt="Anúncio governadora Mailza"
-               loading="lazy">
+          <img
+            src="https://folhadoacre.com.br/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-15-at-11.30.29-696x522.jpeg"
+            alt="Anúncio governadora Mailza" loading="lazy" />
         </div>
         <div class="noticia-body">
           <div class="noticia-meta">
@@ -382,13 +377,17 @@
             <time class="noticia-data" datetime="2026-05-15">15 mai. 2026</time>
           </div>
           <h3 class="noticia-titulo">
-            Mailza anuncia pagamento de R$ 12,3 milhões em prêmio de valorização para quase 6 mil servidores estaduais
+            Mailza anuncia pagamento de R$ 12,3 milhões em prêmio de
+            valorização para quase 6 mil servidores estaduais
           </h3>
           <p class="noticia-resumo">
-            A governadora do Acre, Mailza Assis (PP), anunciou nesta sexta-feira, 15, o início do pagamento do prêmio de valorização destinado a servidores públicos estaduais. O anúncio foi feito por meio das redes sociais da chefe do Executivo.
+            A governadora do Acre, Mailza Assis (PP), anunciou nesta
+            sexta-feira, 15, o início do pagamento do prêmio de valorização
+            destinado a servidores públicos estaduais. O anúncio foi feito por
+            meio das redes sociais da chefe do Executivo.
           </p>
-          <a href="https://folhadoacre.com.br/2026/05/mailza-anuncia-pagamento-de-r-123-milhoes-em-premio-de-valorizacao-para-quase-6-mil-servidores-estaduais/" target="_blank" rel="noopener" class="noticia-link"
-            aria-label="Ler notícia sobre política">
+          <a href="https://folhadoacre.com.br/2026/05/mailza-anuncia-pagamento-de-r-123-milhoes-em-premio-de-valorizacao-para-quase-6-mil-servidores-estaduais/"
+            target="_blank" rel="noopener" class="noticia-link" aria-label="Ler notícia sobre política">
             Ler mais
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
@@ -397,13 +396,12 @@
           </a>
         </div>
       </article>
-  
+
       <!-- Notícia 3 -->
       <article class="noticia-card reveal reveal-delay-2">
         <div class="noticia-img">
           <img src="https://folhadoacre.com.br/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-14-at-19.01.21.jpeg"
-               alt="Operação polícia Acre"
-               loading="lazy">
+            alt="Operação polícia Acre" loading="lazy" />
         </div>
         <div class="noticia-body">
           <div class="noticia-meta">
@@ -411,13 +409,19 @@
             <time class="noticia-data" datetime="2026-05-14">14 mai. 2026</time>
           </div>
           <h3 class="noticia-titulo">
-            Polícia prende suspeito de importunação sexual em escola e cumpre mandado por tráfico no interior do Acre
+            Polícia prende suspeito de importunação sexual em escola e cumpre
+            mandado por tráfico no interior do Acre
           </h3>
           <p class="noticia-resumo">
-            A Polícia Civil do Acre (PCAC), por meio da Delegacia-Geral de Marechal Thaumaturgo, realizou uma ofensiva na manhã desta quinta-feira, 14, resultando na apreensão de uma adolescente por tráfico de drogas e na prisão em flagrante de um homem acusado de importunação sexual e perseguição dentro de uma instituição de ensino.
+            A Polícia Civil do Acre (PCAC), por meio da Delegacia-Geral de
+            Marechal Thaumaturgo, realizou uma ofensiva na manhã desta
+            quinta-feira, 14, resultando na apreensão de uma adolescente por
+            tráfico de drogas e na prisão em flagrante de um homem acusado de
+            importunação sexual e perseguição dentro de uma instituição de
+            ensino.
           </p>
-          <a href="https://folhadoacre.com.br/2026/05/policia-prende-suspeito-de-importunacao-sexual-em-escola-e-cumpre-mandado-por-trafico-no-interior-do-acre/" target="_blank" rel="noopener" class="noticia-link"
-            aria-label="Ler notícia sobre polícia">
+          <a href="https://folhadoacre.com.br/2026/05/policia-prende-suspeito-de-importunacao-sexual-em-escola-e-cumpre-mandado-por-trafico-no-interior-do-acre/"
+            target="_blank" rel="noopener" class="noticia-link" aria-label="Ler notícia sobre polícia">
             Ler mais
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">

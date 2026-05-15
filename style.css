@@ -178,6 +178,7 @@ header.scrolled .header-inner {
     line-height: 1;
     gap: 1px;
     width: 10vi;
+    min-width: 100px;
     height: auto;
 }
 
@@ -1405,4 +1406,58 @@ footer {
   .noticia-titulo {
     word-break: break-word;
     hyphens: auto;
+  }
+
+  /* ===========================
+   CORREÇÃO PLATAFORMAS - MOBILE
+=========================== */
+
+/* Garante que o grid seja 1 coluna em telas menores */
+@media (max-width: 768px) {
+    .plataformas-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+      background: transparent !important;
+      border: none !important;
+    }
+  
+    /* Remove o span 2 do WhatsApp e força comportamento normal */
+    .plataforma-card[style*="grid-column: span 2"],
+    .plataforma-card:has(> div[style*="flex"]) {
+      grid-column: auto !important;
+    }
+  
+    /* Ajusta o card do WhatsApp (que tem flex interno) */
+    .plataforma-card > div[style*="display: flex"] {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+  
+    .plataforma-card > div[style*="display: flex"] > div:first-child {
+      align-self: flex-start;
+    }
+  
+    /* Melhora espaçamento geral dos cards */
+    .plataforma-card {
+      padding: 1.5rem !important;
+    }
+  
+    .card-desc {
+      margin-bottom: 1rem !important;
+    }
+  }
+  
+  /* Para telas muito pequenas (até 480px) */
+  @media (max-width: 480px) {
+    .plataforma-card {
+      padding: 1.2rem !important;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .card-desc {
+      font-size: 0.8rem;
+    }
   }
