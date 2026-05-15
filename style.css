@@ -177,8 +177,7 @@ header.scrolled .header-inner {
     flex-direction: column;
     line-height: 1;
     gap: 1px;
-    width: 10vi;
-    min-width: 100px;
+    width: 10em;
     height: auto;
 }
 
@@ -714,33 +713,6 @@ nav a:hover::after {
     .plataformas-grid {
       grid-template-columns: 1fr;
       gap: 1rem;
-    }
-  }
-  
-  /* Ajuste do card WhatsApp (sem estilos especiais de largura dupla) */
-  .plataforma-card--whatsapp {
-    background: linear-gradient(135deg, #f7fbfb 0%, var(--branco) 100%);
-  }
-  
-  .whatsapp-inner {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .whatsapp-content {
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  /* No mobile, o inner do WhatsApp empilha */
-  @media (max-width: 600px) {
-    .whatsapp-inner {
-      flex-direction: column;
-    }
-    .whatsapp-content {
-      min-width: auto;
     }
   }
   
@@ -1334,7 +1306,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     nav {
         display: none;
     }
@@ -1446,7 +1418,7 @@ footer {
   }
   
   /* Ajuste fino para telas médias */
-  @media (max-width: 1024px) and (min-width: 768px) {
+  @media (max-width: 1024px) and (min-width: 950px) {
     .noticias-grid {
       grid-template-columns: 1fr 1fr;
     }
