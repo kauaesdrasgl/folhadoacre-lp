@@ -689,17 +689,71 @@ nav a:hover::after {
     font-weight: 400;
 }
 
+/* ===========================
+   PLATAFORMAS - GRID 3+2
+=========================== */
+
 .plataformas-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
-    background: var(--cinza-borda);
-    border: 1px solid var(--cinza-borda);
-    border-radius: 6px;
-    overflow: hidden;
-}
+  }
+  
+  /* Tablet: 2 colunas */
+  @media (max-width: 900px) {
+    .plataformas-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+  
+  /* Mobile: 1 coluna */
+  @media (max-width: 600px) {
+    .plataformas-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  /* Ajuste do card WhatsApp (sem estilos especiais de largura dupla) */
+  .plataforma-card--whatsapp {
+    background: linear-gradient(135deg, #f7fbfb 0%, var(--branco) 100%);
+  }
+  
+  .whatsapp-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .whatsapp-content {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* No mobile, o inner do WhatsApp empilha */
+  @media (max-width: 600px) {
+    .whatsapp-inner {
+      flex-direction: column;
+    }
+    .whatsapp-content {
+      min-width: auto;
+    }
+  }
+  
+  /* Garantir que todos os cards tenham altura consistente */
+  .plataforma-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-desc {
+    flex-grow: 1;
+  }
 
 .plataforma-card {
     background: var(--branco);
