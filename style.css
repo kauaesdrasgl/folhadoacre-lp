@@ -753,6 +753,7 @@ nav a:hover::after {
   
   .card-desc {
     flex-grow: 1;
+  }
 
 .plataforma-card {
     background: var(--branco);
